@@ -11,6 +11,7 @@ namespace PclTestLibs
         public string Test()
         {
             var json = JsonConvert.SerializeObject("test string");
+            json += "cos tam";
             return json;
         }
     }
