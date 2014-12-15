@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,7 +10,8 @@ namespace PclTestLibs
     {
         public string Test()
         {
-            return "test string";
+            var json = JsonConvert.SerializeObject("test string");
+            return json;
         }
     }
 }
